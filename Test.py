@@ -48,3 +48,26 @@ weights_1 = weights_1 - derivative
 prediction = make_prediction(input_vector, weights_1, bias)
 error = (prediction - target) ** 2
 print(f"Prediction: {prediction}; Error: {error}")
+
+
+#Chain Rule
+'''derror_dweights = (
+    derror_dprediction * dprediction_dlayer1 * dlayer1_dweights
+)'''
+def sigmoid_deriv(x):
+    return sigmoid(x) * (1-sigmoid(x))
+
+derror_dprediction = 2 * (prediction - target)
+layer_1 = np.dot(input_vector, weights_1) + bias
+dprediction_dlayer1 = sigmoid_deriv(layer_1)
+dlayer1_dbias = 1
+dlayer1_weights = (1 * weights_1[1]) * (1 * weights_1[0])
+
+derror_dbias = (
+    derror_dprediction * dprediction_dlayer1 * dlayer1_dbias
+)
+print(f"Error Bias{derror_dbias}")
+derror_dweights = (
+    derror_dprediction * dprediction_dlayer1 * dlayer1_weights
+)
+print(f"Error Weights{derror_dweights}")
