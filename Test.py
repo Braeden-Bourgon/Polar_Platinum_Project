@@ -71,3 +71,10 @@ derror_dweights = (
     derror_dprediction * dprediction_dlayer1 * dlayer1_weights
 )
 print(f"Error Weights{derror_dweights}")
+
+import NeuralNetworkClass
+learning_rate = 0.1
+
+neural_network = NeuralNetworkClass.NeuralNetwork(learning_rate)
+
+print(f"Input Vector should be {neural_network.predict(input_vector)}\nAt {neural_network.bias} bias, \n{neural_network.weights} weight, \nAnd {neural_network.learning_rate} learning rate")
