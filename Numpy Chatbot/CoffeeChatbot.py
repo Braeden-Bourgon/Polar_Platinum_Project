@@ -5,13 +5,26 @@ def coffee_bot():
   drink_type = get_drink_type()
   style = get_drink_style()
   cup = get_cup()
-  drinks = []
-  print(f"Alright, that's a size {size} {drink_type} {style} in {cup}", f"and {drinks}", "!")
-  additional_drink = input("Would you like something else?")
+  drinks = get_additional() 
+  drink = size + drink_type + style + "in" + cup
+  print(drink)
+  print(f"Alright, that's a size {size} {drink_type} {style} in {cup} and {drinks if len(drinks) >= 1 else ""}!")
   name = input("And can I get your name?")
-  print(f"Thanks, {name}! Your drink will be ready shortly.")
+  print(f"Thanks, {name}! Your drink{"s" if len(drinks) >= 1 else ""} will be ready shortly.")
   return
 
+def get_additional():
+   res = input("Would you like something else? \n[y] Yes \n[n] No").replace(" ", '')
+   if res == 'y':
+      print("Ok!")
+
+
+   elif res == 'n':
+      print('Alright!')
+      return
+
+
+   print('Alright, what else can I get for you?')
 def get_size():
   orderCode = {"a": "Small", "b": "Medium", "c": "Large"}
   res = input('What size drink can I get for you? \n[a] Small \n[b] Medium \n[c] Large \n> ').replace(" ", '')
