@@ -1,10 +1,15 @@
 import numpy as np
 import textData
-
+import preProcessing
+import interpreter
 #Code tells user what they are
-print("Hey, I am polar. I will give you a brief summary and resources that oppose your inputted viewpoint. Try it out!/n (Only works with plea bargaining rn)")
+print("Hey, I am polar. I will give you a brief summary and resources that oppose your inputted viewpoint. Try it out!\n (Only works with plea bargaining rn)")
+#Code gets user response and parses it
+user_response= input("What do you think about plea bargaining?\n")
+user_words = preProcessing.process(user_response)
 #Code analyzes what user is saying
-
+phrases = interpreter.interpret(user_words)
+print("Phrases: ", phrases)
 #Code generates response for user
 data = textData.data
 words = data.lower().split()
@@ -16,7 +21,6 @@ word_to_idx = {word: idx for idx, word in enumerate(vocab)}
 idx_to_word = {idx: word for word, idx in word_to_idx.items()}
 #Send vocab to indexs
 data_indexs = [word_to_idx[word] for word in words]
-
 bigram_counts = np.zeros((vocab_size, vocab_size))
 
 for i in range(len(data_indexs) - 1):
@@ -47,5 +51,5 @@ bigram_counts += 0.01
 bigram_probabilities = bigram_counts / bigram_counts.sum(axis=1, keepdims=True)
 
 #Code is checked by a bot and continues if passes
-
+#Sprint(generate_sentence("i", bigram_probabilities, length = 10))
 #Code adds sources for user
