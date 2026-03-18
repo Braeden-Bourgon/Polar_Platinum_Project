@@ -19,12 +19,6 @@ def get_part_of_speech(word):
     most_likely_part_of_speech = pos_counts.most_common(1)[0][0]
     return most_likely_part_of_speech
 
-def preprocess_text(text):
-  cleaned = re.sub(r'\W+', ' ', text).lower()
-  tokenized = word_tokenize(cleaned)
-  normalized = [WordNetLemmatizer().lemmatize(token, get_part_of_speech(token)) for token in tokenized]
-  return " ".join(normalized)
-
 def stem(text):
    
     cleaned = re.sub('\W', ' ', text)
@@ -40,7 +34,7 @@ def stem(text):
     return
 
 def process(text):
-   words = re.sub('\W', ' ', text).lower()
+   words = re.sub(r'\s+', ' ', text).lower()
    tokens = word_tokenize(words)
    lemmatized_words = [WordNetLemmatizer().lemmatize(token, get_part_of_speech(token)) for token in tokens]
    print("Words: ", lemmatized_words)

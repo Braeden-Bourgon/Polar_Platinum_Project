@@ -4,7 +4,7 @@ from collections import Counter
 matched_words = {"plea", 'bargain'}
 matches = []
 newData = []
-length = range(1, 5)
+length = range(1, 8)
 def interpret(userwords): 
     for userword in userwords: 
         for matchedword in matched_words: 
@@ -14,18 +14,18 @@ def interpret(userwords):
             continue
         continue
     user_phrase = phrases(matches, userwords)
-    return matches, user_phrase
+    return user_phrase
 
 def phrases(matches, words):
     phrases = []
     for match in matches: 
         phrase = (match)
         for time in length: 
-           if((words[words.index(match) + time]) != "."):
-               print("added word") 
+           if((words[words.index(match) + time]) != ("." or "!" or"?")):
                phrase += " " +(words[words.index(match) +time])
            else: 
                break 
+        print(phrases)
         phrases.append(phrase)
     return phrases
 
