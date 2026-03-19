@@ -20,6 +20,12 @@ def get_part_of_speech(word):
     most_likely_part_of_speech = pos_counts.most_common(1)[0][0]
     return most_likely_part_of_speech
 
+def preprocess(doc):
+    sentences = nltk.sent_tokenize(doc)
+    sentences = [nltk.word_tokenize(sent) for sent in sentences]
+    sentences = [nltk.pos_tag(sent) for sent in sentences]
+    return sentences  
+
 def preprocess_text(text):
   cleaned = re.sub(r'\W+', ' ', text).lower()
   tokenized = word_tokenize(cleaned)
