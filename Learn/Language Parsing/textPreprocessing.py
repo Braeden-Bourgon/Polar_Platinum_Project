@@ -20,6 +20,11 @@ def get_part_of_speech(word):
     most_likely_part_of_speech = pos_counts.most_common(1)[0][0]
     return most_likely_part_of_speech
 
+def process_text(text):
+    cleaned = re.sub(r'\W+', ' ', text).lower()
+    tokenized = word_tokenize(cleaned)
+    return tokenized
+
 def preprocess_text(text):
   cleaned = re.sub(r'\W+', ' ', text).lower()
   tokenized = word_tokenize(cleaned)

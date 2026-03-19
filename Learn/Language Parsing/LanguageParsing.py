@@ -1,8 +1,8 @@
 #Part of Speech Tagging
+from textPreprocessing import process_text, Othertext
 import nltk 
 from nltk import pos_tag, RegexpParser, Tree
-from textPreprocessing import process_text, Othertext
-cleanedTxt = process_text(Othertext)
+cleanedTxt = pos_tag(process_text(Othertext))
 #print(cleanedTxt)
 chunked = []
 #Chunking 
