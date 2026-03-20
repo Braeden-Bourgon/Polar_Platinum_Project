@@ -37,6 +37,6 @@ def process(text):
    words = re.sub(r'\s+', ' ', text).lower()
    tokens = word_tokenize(words)
    lemmatized_words = [WordNetLemmatizer().lemmatize(token, get_part_of_speech(token)) for token in tokens]
-   print("Words: ", lemmatized_words)
+#    print("Words: ", lemmatized_words)
    return lemmatized_words
 
