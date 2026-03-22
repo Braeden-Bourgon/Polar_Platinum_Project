@@ -44,12 +44,6 @@ def Polar(restart, again): #(user_response, restart)
     return restart, again
 
 
-#Code tells user what they are
-
-
-# Response adds sources onto it
-
-
 def Initialize():
     restart = Polar(False, False)
     while(restart[0] == True):

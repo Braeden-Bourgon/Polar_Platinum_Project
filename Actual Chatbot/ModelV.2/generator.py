@@ -1,0 +1,23 @@
+matched_words = ['plea', 'bargain', 'innocent', 'prosecutor', 'system', 'defendant', 'justice', 'lawyer', 'judge']
+trainInputData = []
+
+with open("data.txt", 'r', encoding='utf-8') as f:
+    lines = f.read().split('\n')
+    for line in lines:
+        line = line.split("$$$")
+        trainInputPoint = line[0]
+        trainInputData.append(trainInputPoint.lower())
+print(trainInputData)
+def subject(user_phrase):
+    #subject is the bias and phrase
+    subject = [user_phrase[0],user_phrase[1]]
+    for word in matched_words:
+        if word in user_phrase: 
+            subject.append(word)
+    return subject
+
+def generate(user_phrase):
+    subject = subject(user_phrase)
+    response = ""
+    response.join()
+    return response

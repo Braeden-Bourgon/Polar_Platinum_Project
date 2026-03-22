@@ -17,5 +17,20 @@ If you are in interested in a more nuanced opinion, check out
 If you prefer to view a stronger stance on the issue, check out 
 '''
 mplea = '''
-
 '''
+
+pvictim = '''
+While the victim could get a quicker decision, it often disregards their thoughts on the matter. In this case, the justice system is 
+not providing proper retribution for them, which is one of the key aspects of the system. Additionally in extreme circumstances the 
+victim may seek justice themselves due to the justice they found appearing lack luster. \n
+If you want to dive deeper into this idea check out this resource: \n
+'''
+
+ovictim = '''
+Although plea bargaining may not provide the punishment the victim desires, the system of plea bargaining allows criminals to 
+actually be punished to begin with. In fact, the judicial system would be clogged and unable to function without plea bargaining. 
+With this in mind, it is evident that plea bargaining despite not giving the desired result the victim wants, it provides them with 
+some retribution compared to none.\n
+If you want to dive deeper into this idea check out this resource: \n
+'''
+
