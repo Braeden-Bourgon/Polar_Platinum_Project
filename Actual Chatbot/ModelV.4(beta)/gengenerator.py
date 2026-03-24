@@ -93,7 +93,6 @@ def subject(user_phrase):
 
 def generate(user_phrase):
     # subject = subject(user_phrase)
-    # print(subject)
     response = ""
     training_model = load_model('training_model.keras')
     encoder_inputs = training_model.input[0]
@@ -121,24 +120,20 @@ def generate(user_phrase):
     decoder_outputs = decoder_dense(decoder_outputs)
     # Build the decoder test model:
     decoder_model= Model([decoder_inputs] + decoder_states_inputs, [decoder_outputs] + decoder_states)
-    print(user_phrase)
     words = []
     words.append(user_phrase.split())
     for token in re.findall(r"[\w']+|[^\s\w]", input_phrase): 
         if token not in input_tokens:
             input_tokens.add(token)
-    print(words)
     user_input_data = np.zeros((len(words), max_input_seq_length, num_input_tokens),
     dtype='float32')
     userInput = user_input_data
     response = decode_sequence(userInput, encoder_model, decoder_model)
-    print(response)
     return response
 
 def decode_sequence(test_input,encoder_model,decoder_model):
   # Encode the input as state vectors:
   encoder_states_value = encoder_model.predict(test_input)
-  print(len(test_input))
   # Set decoder states equal to encoder final states
   decoder_states_value = encoder_states_value
   # Generate empty target sequence of length 1:
@@ -169,7 +164,5 @@ def decode_sequence(test_input,encoder_model,decoder_model):
 
     # Update states
     decoder_states_value =[new_decoder_hidden_state, new_decoder_cell_state]
-    print("Phrase:",decodedPhrase)
   return decodedPhrase
   
-generate("I hate pleas more")
