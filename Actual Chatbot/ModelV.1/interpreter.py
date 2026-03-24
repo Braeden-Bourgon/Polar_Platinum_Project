@@ -1,10 +1,10 @@
 import re
 from nltk import word_tokenize, ngrams
 from collections import Counter
-matched_words = ['plea', 'bargain', 'innocent', 'guilt', 'admit', 'system', 'defendant']
+matched_words = ['plea', 'bargain', 'innocent', 'guilt', 'admit', 'system', 'defendant', 'justice']
 matches = []
 newData = []
-negations = ["bad", "terrible", "hurt", "pressure", ]
+negations = ["bad", "terrible", "hurt", "pressure", "suck", "unjust", "injustice", 'racist']
 negativePhrases = []
 length = range(-1, 8)
 def interpret(userwords): 

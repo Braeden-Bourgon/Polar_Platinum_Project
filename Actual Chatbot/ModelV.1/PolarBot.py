@@ -1,9 +1,10 @@
 import numpy as np
-import re
-import textData
+import textData 
+from textData import oplea, pplea, pvictim, ovictim, pjustice, ojustice, pdiscrim, odiscrim, peffecient, oeffecient 
 import preProcessing
 from interpreter import interpret, matched_words
 
+generatorDictionary = {('plea', 0): pplea, ('plea', 1): oplea, ('bargain', 0): pplea, ('bargain', 1): oplea}
 def Polar(restart, again): #(user_response, restart)
     response =""
     #Code gets user response and parses it
@@ -16,17 +17,17 @@ def Polar(restart, again): #(user_response, restart)
     phrases = interpret(user_words)
     # print(any(phrase[0] != ('plea' or 'bargain') for phrase in phrases))
     #Code uses a response for user's phrases / perspective
-    if any(phrase[0] != 'plea' or phrase[0] != 'bargain' for phrase in phrases):
-        for phrase in phrases:
-            print(phrase)
-    elif all(phrase[0] == 'plea' or phrase[0] == 'bargain' for phrase in phrases):  
+    if all(phrase[0] == 'plea' or phrase[0] == 'bargain' for phrase in phrases):  
         if all(phrase[1] == -1 for phrase in phrases):
             response = textData.oplea
         elif all(phrase[1] == 0 for phrase in phrases):
             response = textData.pplea
         else:
-            print("This is a mixed opinion! Great job on being moderate, but try to take a stance.\n" \
-            "Maybe take one of your arguments and run with it next time to see an opposing side to it.")
+            response="This is a mixed opinion! Great job on being moderate, but try to take a stance.\n" \
+            "Maybe take one of your points and type it for next time to see an opposing side to it."
+    elif any(phrase[0] != 'plea' or phrase[0] != 'bargain' for phrase in phrases):
+        for phrase in phrases:
+            print(generatorDictionary.get(phrase), "Not Found")
     else:
         return True, False
     print(response)

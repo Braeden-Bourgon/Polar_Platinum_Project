@@ -195,3 +195,9 @@ Pleas are bad for people of color$$$1
 Plea deals are bad for people of color$$$1
 Bargains are bad for people of color$$$1
 A plea bargain reduces court clogs$$$0
+I hate pleas$$$1
+Innocent people would go to prison$$$1
+Pleas would cause innocent people to go to prison$$$1
+Plea bargains would cause innocent people to go to prison$$$1
+Plea deals would cause innocent people to go to prison$$$1
+Bargains would cause innocent people to go to prison$$$1

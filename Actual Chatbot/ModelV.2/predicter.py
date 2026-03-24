@@ -24,9 +24,9 @@ def interpret(userInput):
     new_text = [userInput]
     userinput = vectorizer.transform(new_text)
     probabilities = nb.predict_proba(userinput)
-    #If statement where if class 0 (poistive) is greater than class 1 (negative) the statement is positive
+    #If statement where if class 0 (positive) is greater than class 1 (negative) the statement is positive
     pbias = False if probabilities[0][0] < probabilities[0][1] else True
-    result = [pbias, userInput]
+    result = (userInput, pbias)
     print(result)
     return result
 
@@ -42,6 +42,8 @@ def Train():
             for userinput in userInputs:
                 if userinput != "q": 
                     with open("data.txt", "a") as f:
+                        f.write("\n"+ userinput +"$$$")
+                    with open("targetText.txt", "a") as f:
                         f.write("\n"+ userinput +"$$$")
             stop = True
         trainInput = vectorizer.transform(new_text)

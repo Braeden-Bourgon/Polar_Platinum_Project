@@ -1,7 +1,13 @@
+import numpy as np
+import re
+from keras.models import Model, load_model
+from keras.layers import Input
+from trainingGenerator import getModel
+
 matched_words = ['plea', 'bargain', 'innocent', 'prosecutor', 'system', 'defendant', 'justice', 'lawyer', 'judge']
 trainInputData = []
 
-with open("data.txt", 'r', encoding='utf-8') as f:
+with open("targetText.txt", 'r', encoding='utf-8') as f:
     lines = f.read().split('\n')
     for line in lines:
         line = line.split("$$$")

@@ -1,4 +1,5 @@
 import re
+from nltk import RegexpParser, pos_tag
 from nltk.tokenize import word_tokenize
 from nltk.stem import PorterStemmer
 from nltk.stem import WordNetLemmatizer
@@ -8,6 +9,9 @@ from collections import Counter
 
 stop_words = stopwords.words('english')
 
+grammar = r"""
+    VP: {<DT.*>?<JJ.*>?<NN.*>+<.*>?<VB.*>}
+"""
 def get_part_of_speech(word):
     probable_part_of_speech = wordnet.synsets(word)
     pos_counts = Counter()
@@ -19,23 +23,10 @@ def get_part_of_speech(word):
     most_likely_part_of_speech = pos_counts.most_common(1)[0][0]
     return most_likely_part_of_speech
 
-def stem(text):
-   
-    cleaned = re.sub('\W', ' ', text)
-    tokenized = word_tokenize(cleaned)
-
-    stemmer = PorterStemmer()
-    stemmed = [stemmer.stem(token) for token in tokenized]
-
-    lemmatized = [WordNetLemmatizer().lemmatize(token, get_part_of_speech(token)) for token in tokenized]
-
-    print("Stemmed:", stemmed)
-    print("Lemmatized:", lemmatized)
-    return
-
 def process(text):
-   words = re.sub(r'\s+', ' ', text).lower()
+   words = re.sub(r'\s+', ' ', text + ".").lower()
    tokens = word_tokenize(words)
    lemmatized_words = [WordNetLemmatizer().lemmatize(token, get_part_of_speech(token)) for token in tokens]
+   parsed_words = pos_tag(lemmatized_words)
 #    print("Words: ", lemmatized_words)
    return lemmatized_words
