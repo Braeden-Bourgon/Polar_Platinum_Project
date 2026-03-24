@@ -1,5 +1,5 @@
 from sklearn.naive_bayes import MultinomialNB
-from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
+from sklearn.feature_extraction.text import TfidfVectorizer
 import numpy as np
 texts = []
 labels = [] # 0: positive, 1: negative
@@ -43,7 +43,6 @@ def interpret(userInput):
     #If statement where if class 0 (positive) is greater than class 1 (negative) the statement is positive
     pbias = 1 if probabilities[0][0] < probabilities[0][1] else 0
     result = (userInput, pbias)
-    print(result)
     return result
 
 def generate(userInput):
@@ -70,8 +69,6 @@ def Train():
             stop = True
         trainInput = vectorizer.transform(new_text)
         probabilities = nb.predict_proba(trainInput)
-        print(probabilities)  #[P, N]
         print("Negative" if probabilities[0][0] < probabilities[0][1] else "Positive" )
     return 
 # Train()
-generate("I hate pleas")

@@ -28,7 +28,8 @@ def subject(user_phrase):
             subject.append(word)
     return subject
 
-def generator(code):
+def generator(userInput):
+    response = PolarBot.get_response(userInput)
     return response
 
 def train():

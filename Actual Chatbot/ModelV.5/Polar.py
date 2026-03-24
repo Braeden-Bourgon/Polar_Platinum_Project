@@ -13,10 +13,8 @@ def Polar(restart, again):
         user_phrases = re.split(r'[!?.;:]+', user_response)
         #Code analyzes what user is saying
         for user_phrase in user_phrases:
-            norp = interpret(user_phrase)
-            generatecode = generate(user_phrase)
             #Code sends the bias and phrase to the generator
-            response = generator(generatecode)
+            response = generator(user_phrase)
         print(response)
         #Code checks if user wants to try again
         again = input("Would you like to try again? Type y for yes or n for no.\n").lower()
