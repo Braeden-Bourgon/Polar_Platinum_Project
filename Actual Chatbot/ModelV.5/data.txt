@@ -1,0 +1,203 @@
+I hate pleas$$$1
+I hate bargains$$$1
+I hate plea bargains$$$1
+I love bargains$$$0
+I think pleas suck$$$1
+I think pleas are terrible$$$1
+I think pleas lead to injustice$$$1
+I think pleas lead to justice$$$0
+Plea bargaining is evil$$$1
+I hate plea bargaining$$$1
+Pleas are terrible$$$1
+Bargains lead to injustice$$$1
+Pleas hurt victims$$$1
+Bargains hurt victims$$$1
+Plea bargaining is good$$$0
+I like plea bargaining$$$0
+Pleas are great$$$0
+Bargains lead to justice$$$0
+Pleas help victims$$$0
+Bargains help victims$$$0
+Pleas are just$$$0
+I love pleas$$$0
+I love bargains$$$0
+Pleas allow justice to occur$$$0
+Without bargains, justice would not occur$$$0
+With bargains, justice cannot occur$$$1
+With pleas, justice is unable to occur$$$1
+With bargains, justice is unable to occur$$$1
+Pleas are immoral$$$1
+Pleas prevent justice from occuring$$$1
+Bargains allow criminals to get away$$$1
+Bargains award criminals$$$1
+I hate plea bargaining$$$1
+Plea bargains are unjust$$$1
+Pleas are unjust$$$1
+Bargains are unjust$$$1
+Bargains are injust$$$1
+Pleas are immoral$$$1
+Pleas are immoral$$$1
+Pleas harm the justice system$$$1
+Bargains prevent justice from occuring$$$1
+I think pleas prevent justice from occuring$$$1
+I think the justice system is hurt by pleas$$$1
+Pleas coerce defendants into pleading guilty$$$1
+Bargains coerce defendants into pleading guilty$$$1
+Plea bargaining coerce defendants into pleading guilty$$$1
+Pleas allow defendants to go to trial$$$0
+Bargains allow defendants to go to trial$$$0
+Plea bargaining allow defendants to go to trial$$$0
+Pleas allow the justice system to continue to run$$$0
+Bargains allow the justice system to continue to run$$$0
+Plea bargaining allows the justice system to continue to run$$$0
+Plea bargains allow the justice system to continue to run$$$0
+Plea bargains remove court clogs$$$0
+Pleas remove court clogs$$$0
+Bargains remove court clogs$$$0
+Plea bargains give victims justice$$$0
+Plea bargains give innocent defendants a chance to go to trial and be found not guilty$$$0
+Pleas give victims justice$$$0
+Bargains give victims justice$$$0
+Bargains give innocent defendants a chance to go to trial and be found not guilty$$$0
+Pleas give innocent defendants a chance to go to trial and be found not guilty$$$0
+Pleas are evil$$$1
+Plea deals are evil$$$1
+Plea bargains are evil$$$1
+Bargains are evil$$$1
+Plea deals are discriminatory.$$$1
+Plea bargains are discriminatory.$$$1
+Pleas are discriminatory.$$$1
+Bargains are discriminatory.$$$1
+Plea deals are biased$$$1
+Plea bargains are biased$$$1
+Plea bargaining is constitutionally wrong$$$1
+Plea deals are constitutionally wrong$$$1
+Plea bargains over punish the poor and help the rich$$$1
+Plea deals over punish the poor and help the rich$$$1
+Bargains punish the poor and help the rich$$$1
+Pleas hurt the poor and help the rich$$$1
+Plea deals hurt the poor and help the rich$$$1
+Plea bargains hurt the poor and help the rich$$$1
+Pleas bargaining hurts the poor and helps the rich$$$1
+Pleas help the rich and hurt the poor$$$1
+Plea deals lack transparency$$$1
+Plea bargains lack transparency$$$1
+Pleas lack transparency$$$1
+Bargains lack transparency$$$1
+Pleas are discriminatory$$$1
+Bargains are discriminatory$$$1
+Bargains are positive$$$0
+Pleas are positive$$$0
+Plea bargains are positive$$$0
+Plea deals are positive$$$0
+Plea bargains are flexible$$$0
+Bargains are flexible$$$0
+Pleas are flexible$$$0
+Pleas are individualized$$$0
+Plea bargains prevent delays$$$0
+Pleas prevent delays$$$0
+Bargains prevent delays$$$0
+Plea bargaining prevents delays$$$0
+I hate pleas$$$1
+I hate plea bargaining$$$1
+I hate plea bargains$$$1
+I hate plea deals$$$1
+Pleas are positive$$$0
+Plea deals are positive$$$0
+Plea bargains are positive$$$0
+Bargains are positive$$$0
+Pleas are efficient, but are unfair$$$1
+Plea bargains are efficient, but are unfair$$$1
+Plea deals are efficient, but are unfair$$$1
+Pleas are efficient$$$0
+Plea deals are efficient$$$0
+Plea bargains are efficient$$$0
+Plea bargaining is efficient$$$0
+Pleas help put a stop to organized crime$$$0
+Pleas help stop organized crime$$$0
+Plea bargains help stop organized crime$$$0
+Plea bargains help put a stop to organized crime$$$0
+Pleas deals help put a stop to organized crime$$$0
+Plea deals help stop organized crime$$$0
+Prosecutors could influence innocent defendants to plead guilty$$$1
+Defense lawyers could convince their innocent clients to plead guilty$$$1
+Plea bargains alleviate backlog for courts$$$0
+Pleas alleviate backlog for courts$$$0
+Plea deals alleviate backlog for courts$$$0
+Plea bargaining alleviates backlog for courts$$$0
+Lawyers and prosecutors can use plea bargains to lighten their case loads$$$0
+Prosecutors and lawyers can use plea bargains to lighten their case loads$$$0
+Plea bargains lack transparency$$$1
+Pleas lack transparency$$$1
+Plea deals lack transparency$$$1
+Pleas are racist$$$1
+Plea deals are racist$$$1
+Plea bargains are racist$$$1
+Bargains are racist$$$1
+Bargains are good$$$0
+Plea bargaining is good$$$0
+Plea deals are good$$$0
+Plea deals are constructive$$$0
+Pleas are constructive$$$0
+Plea deals are great$$$0
+Plea bargaining is constructive$$$0
+I hate plea deals$$$1
+Lawyers can use pleas to alleviate their caseloads$$$0
+Lawyers will influence defendants to plead guilty because pleas alleviate their caseloads$$$1
+Prosecutors will use higher sentencing to influence defendants to plead guilty$$$1
+Prosecutors will use higher sentencing to influence innocent defendants to plead guilty$$$1
+Pleas will make prosecutors use higher sentencing to influence innocent defendants to plead guilty$$$1
+Plea bargains are good$$$0
+Plea bargains are bad$$$1
+Pleas are dumb$$$1
+Pleas are smart$$$0
+Pleas work$$$0
+Pleas dont work$$$1
+Pleas do work$$$0
+Pleas do not work$$$1
+Pleas never work$$$1
+Pleas cause the justice system to be unjust$$$1
+Pleas favor the rich$$$1
+Pleas give the poor a chance$$$0
+Pleas help the poor$$$0
+Plea deals help the poor$$$0
+Plea bargains help the poor$$$0
+Pleas are awesome$$$0
+Plea deals are awesome$$$0
+Plea bargains are awesome$$$0
+Pleas are great$$$0
+Plea deals are great$$$0
+Pleas bargains are great$$$0
+Pleas are amazing$$$0
+Plea deals are amazing$$$0
+Plea bargains are amazing$$$0
+Pleas should not exist because cases should always go to court$$$1
+Plea bargains should not exist because cases should always go to court$$$1
+Plea deals should not exist because cases should always go to court$$$1
+Pleas are beneficial$$$0
+Plea deals are beneficial$$$0
+Plea bargains are beneficial$$$0
+Plea bargains benefit the justice system$$$0
+Plea deals benefit the justice system$$$0
+Pleas suck$$$1
+Plea deals suck$$$1
+Plea bargains suck$$$1
+Plea bargaining sucks$$$1
+Pleas are great$$$0
+Pleas suck$$$1
+Innocent plead guilty due to plea bargains$$$1
+Innocent plead guilty due to plea deals$$$1
+Plea bargains are terrible$$$1
+Plea bargains benefit victims$$$0
+Bargains prevent justice from occuring$$$1
+Plea bargains are bad for people of color$$$1
+Pleas are bad for people of color$$$1
+Plea deals are bad for people of color$$$1
+Bargains are bad for people of color$$$1
+A plea bargain reduces court clogs$$$0
+I hate pleas$$$1
+Innocent people would go to prison$$$1
+Pleas would cause innocent people to go to prison$$$1
+Plea bargains would cause innocent people to go to prison$$$1
+Plea deals would cause innocent people to go to prison$$$1
+Bargains would cause innocent people to go to prison$$$1
