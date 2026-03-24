@@ -1,22 +1,22 @@
 import re
-from predicter import interpret
-from generator import generate
+from predicter import interpret, generate
+from generator import generator
 def Initialize():
-    restart = Polar(False, False)
-    while(restart[0] == True):
-        Polar(True, restart[1])
+    Polar(False, False)
+    
 
 def Polar(restart, again):
     response = ""
     #Code gets user response and seperates it into phrases
-    while restart == False or again == True:
+    while again == True or restart == False:
         user_response = input("What do you think about plea bargaining?\n")
         user_phrases = re.split(r'[!?.;:]+', user_response)
         #Code analyzes what user is saying
         for user_phrase in user_phrases:
             norp = interpret(user_phrase)
+            generatecode = generate(user_phrase)
             #Code sends the bias and phrase to the generator
-            response = generate(norp)
+            response = generator(generatecode)
         print(response)
         #Code checks if user wants to try again
         again = input("Would you like to try again? Type y for yes or n for no.\n").lower()
