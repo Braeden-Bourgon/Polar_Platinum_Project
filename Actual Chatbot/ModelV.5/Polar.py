@@ -2,8 +2,9 @@ import re
 from predicter import interpret, generate
 from generator import generator
 def Initialize():
-    Polar(False, False)
-    
+    restart = Polar(False, False)
+    while(restart[0] == True):
+        Polar(True, restart[1])
 
 def Polar(restart, again):
     response = ""
@@ -28,9 +29,9 @@ def Polar(restart, again):
             again = False
         else:
             print("Can you try that again?")
-        return restart, 
+        return restart, again
     else:
         user_response = input("Sorry, but that last response did not mention plea bargaining. \nMake sure you include words like plea, or bargain in your response. \nWhat do you think about plea bargaining?\n")
    
-
+print("Hey, I am Polar. I will give you a brief summary and resources that oppose your inputted viewpoint. Try it out!\n (Only works with plea bargaining rn)")
 Initialize()

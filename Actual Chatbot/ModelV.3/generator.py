@@ -7,7 +7,7 @@ with open("targetText.txt", 'r', encoding='utf-8') as f:
         line = line.split("$$$")
         trainInputPoint = line[0]
         trainInputData.append(trainInputPoint.lower())
-with open('sampleGeneration.txt', 'r', encoding='utf-8') as f:
+with open('sampleSentences.txt', 'r', encoding='utf-8') as f:
     lines = f.read().split('\n')
     for line in lines:
         responses.append(line)

@@ -45,18 +45,9 @@ def train():
         list_trainer.train(conversation)
 
 
-    # ....
-
-    # conv_n = [
-    #     "....",
-    #     ......
-    # ]
-
     list_trainer = ListTrainer(PolarBot)
 
     list_trainer.train(conversation)
-    # ....
-    # list_trainer.train(conv_n) # where n - number of conversations
 
     while True:
         query = input()
