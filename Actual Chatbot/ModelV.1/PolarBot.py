@@ -2,9 +2,9 @@ import numpy as np
 import textData 
 from textData import oplea, pplea, pvictim, ovictim, pjustice, ojustice, pdiscrim, odiscrim, peffecient, oeffecient 
 import preProcessing
-from interpreter import interpret, matched_words
+from interpreter import interpret
 
-generatorDictionary = {('plea', 0): pplea, ('plea', 1): oplea, ('bargain', 0): pplea, ('bargain', 1): oplea}
+generatorDictionary = {('plea', 0): pplea, ('plea', 1): oplea, ('bargain', 0): pplea, ('bargain', 1): oplea, ('justice', 0): pjustice, ('justice', 1): ojustice, ('innocent', 1): ojustice, ('guilt', 1): ojustice, ('innocent', 0): peffecient, ('system', 0): peffecient, ('system', 1): oeffecient, ('defendant', 1): ojustice, ('defendant', 0): peffecient}
 def Polar(restart, again): #(user_response, restart)
     response =""
     #Code gets user response and parses it

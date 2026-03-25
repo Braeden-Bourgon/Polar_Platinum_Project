@@ -43,7 +43,6 @@ def interpret(userInput):
     #If statement where if class 0 (positive) is greater than class 1 (negative) the statement is positive
     pbias = 1 if probabilities[0][0] < probabilities[0][1] else 0
     result = (userInput, pbias)
-    print(result)
     return result
 
 def generate(userInput):
